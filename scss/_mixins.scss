@@ -1,0 +1,41 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin reseteo-lista{
+    list-style-type: none;
+    text-align: center;
+}
+
+// @mixin grid($rows, $columns, $areas) {
+//     display: grid;
+//     grid-template-rows: ;
+// }
+
+@mixin flexbox ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin contenedor ($list, $back, $margin, $padding, $borderheader, $borderrad){
+    list-style-type: $list;
+    background-color: $back;
+    margin: $margin;
+    padding: $padding;
+    border: $borderheader;
+    border-radius: $borderrad;
+}
+
+@mixin contenedor-red ($bc, $color, $border, $b-radio) {
+    background-color: $bc;
+    color: $color;
+    border: $border;
+    border-radius: $b-radio;
+
+}
+

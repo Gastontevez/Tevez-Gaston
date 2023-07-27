@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: 3fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}

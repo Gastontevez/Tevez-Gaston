@@ -1,0 +1,276 @@
+main{
+    background-color: $colorsecundario;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 0.7fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2"
+    ;
+    grid-row-gap: 5px;
+
+    #seccion1{
+        grid-area: seccion1;
+        background-color: $colorsecundario;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    #seccion2{
+        grid-area: seccion2;
+        background-color: white;
+        
+        #seccion22{
+            @include flexbox(row, nowrap, space-evenly, center);
+
+            .foto{
+                height: 270px;
+                width: 180px;
+                border: 20px solid #E8CA4D;
+            }
+        }
+    }
+}
+
+
+#body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "mainproduc mainproduc mainproduc"
+    "footer footer footer"
+    ;
+    
+}
+
+#mainproduc{
+    background-color: white;
+    grid-area: mainproduc;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+    "navP sectionnavP sectionnavP1"
+    "navP sectionnavP sectionnavP1";    
+    grid-column-gap: 5px;
+
+    #navP{
+        background-color: $colorsecundario;
+        grid-area: navP;
+        text-align: center;
+    }
+    
+    div{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    li{
+        color: white;
+        list-style-type: none;
+        margin-top: 8px;
+    }
+
+    a{
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    #sectionnavP{
+        background-color: #E8CA4D;
+        grid-area: sectionnavP;
+    }
+
+    #producto2{
+        @include flexbox(row, nowrap, space-evenly, center);
+    }
+
+    #sectionnavP1{
+        background-color: $colorprincipal;
+        grid-area: sectionnavP1;
+        text-align: center;
+    }
+
+}
+
+
+
+#bodyubi{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "ubicacion ubicacion ubicacion"
+    "footer footer footer"
+    ;
+}
+
+#ubicacion{
+    background-color: white;
+    grid-area: ubicacion;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "navU ubi ubi"
+    "navU ubi ubi";
+    grid-column-gap: 5px;
+
+    #navU{
+        grid-area: navU;
+    }
+
+    #ubi{
+        background-color: $colorsecundario;
+        grid-area: ubi;
+
+        p{
+            color: white;
+            font-size: 1.3rem;
+            text-align:inherit;
+            margin-top: 120px;
+            margin-left: 60px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#bodyate{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "atencion atencion atencion"
+    "footer footer footer"
+    ;
+}
+
+
+#atencion{
+    background-color: $colorsecundario;
+    grid-area: atencion;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "ATE ATE1 ATE1"
+    "ATE ATE1 ATE1";
+
+    #ATE{
+        color: white;
+        list-style-type: none;
+        text-align: center;
+    }
+}
+
+#ATE1{
+    .ate label{
+        color: white;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+    input{
+        padding: 5px 20px;
+    }
+
+    .ate1 label{
+        color: white;
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .ate2{
+        color: white;
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .enviartext{
+        background-color: #E8CA4D;
+        font-size: 1rem;
+        border: 2px solid black;
+        border-radius: 7px;
+
+    }
+
+    #mensaje{
+        padding: 100px;
+    }
+}
+
+
+
+
+#bodyfocus{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "mainfocus mainfocus mainfocus"
+    "footer footer footer"
+    ;
+}
+
+
+#mainfocus{
+    grid-area: mainfocus;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "focus focus1 focus1"
+    "focus focus1 focus1";
+    grid-column-gap: 5px;
+    
+    #focus{
+        grid-area: focus;
+
+        img{
+            height: 430px;
+            width: 500px;
+            border-radius: 7px;
+        }
+    }
+
+    #focus1{
+        grid-area: focus1;
+
+        p{
+            color: white;
+            font-size: 1.3rem;
+            text-align: start;
+            margin: 10px;
+        }
+    }
+}

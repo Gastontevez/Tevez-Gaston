@@ -1,0 +1,51 @@
+footer{
+    grid-area: footer;
+    background-color: $colorprincipal;
+
+
+        #redsocial{
+            @include flexbox(row, nowrap, space-around, center);
+
+                    .red{
+                    @include contenedor-red(green, white, 5px solid green, 7px);
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                    }
+                }
+
+        .red1{
+            @include contenedor-red(red, white, 5px solid red, 7px);
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+            }
+
+
+        .red2{
+            @include contenedor-red(#3a5795, white, 5px solid #3a5795, 7px);
+
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+            }
+
+            img{
+                height: 30px;
+                width: 30px;
+                border-radius: 3px solid;
+            }
+
+        .inline{
+            text-align: center;
+            color: white;
+            margin: 20px 0px;
+            }
+
+}
